@@ -1,10 +1,4 @@
 // 
-[{
-    id: 2343,
-    name: 'john doe',
-    room: 'Everyone loves me',
-}];
-
 class Users {
     constructor() {
         this.users = [];
@@ -16,7 +10,7 @@ class Users {
     }
     removeUser(id) {
         let user = this.getUser(id);
-        // let user = this.users.filter(user => user.id === id);
+
         if (user) {
             this.users = this.users.filter(user => user.id !== id)
         }
